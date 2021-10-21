@@ -1,0 +1,42 @@
+.achieve{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: var(--col-FBF9F7);
+    padding: 9em 0 12em;
+
+    h3, h4, ul{
+        grid-column: 2/12;
+    }
+
+    h4{
+        font-weight: $font-medium;
+    }
+
+    &__list{
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin-top: 8em;
+        li{
+            background-color: var(--white);
+            padding: 4em 2.4em;
+            border-radius: 2px;
+
+            label{
+                font-size: 2.2rem;
+                color: var(--col-1e1e1e);
+                font-weight: $font-semi-bold;
+            }
+
+            p{
+                font-size: 1.6rem;
+                color: var(--col-696969);
+                margin-top: 1.2em;
+            }
+
+            &:not(:last-child){
+                margin-right: 6.4em;
+            }
+        }
+    }
+}

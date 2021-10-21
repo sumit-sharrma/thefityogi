@@ -1,0 +1,26 @@
+@function hexToRGB($hex) {
+    @return red($hex), green($hex), blue($hex);
+}
+
+$primary: #F6953C;
+
+:root{
+    --primary: #{$primary};
+    --white: #fff;
+    --white-rgb: 255, 255, 255;
+    --black: #000;
+    --black-rgb: 0, 0, 0;
+    --body-background: #fff;
+    --shadow-opacity: .16;
+    --opaque: 1;
+
+    // Text styles
+    --col-1E1E1E: #1E1E1E;
+    --col-696969: #696969;
+    --col-2ECB92: #2ECB92;
+    --col-FBF9F7: #FBF9F7;
+    --col-E7E7E7: #E7E7E7;
+    --col-E0E0E0: #E0E0E0;
+    --col-2C3934: #2C3934;
+    --primary-rgb: #{hexToRGB($primary)};
+}
