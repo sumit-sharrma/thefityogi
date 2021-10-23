@@ -39,4 +39,16 @@
             }
         }
     }
+
+    &__img{
+        border: 1px solid var(--col-E7E7E7);
+        background-color: var(--col-FBF9F7);
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        margin-bottom: 3.2em;
+    }
 }
