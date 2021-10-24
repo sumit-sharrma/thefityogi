@@ -386,15 +386,15 @@ ul, ol, blockquote, label, a {
 
 .goals__image {
   -ms-grid-column: 7;
-  -ms-grid-column-span: 5;
-  grid-column: 7/12;
+  -ms-grid-column-span: 6;
+  grid-column: 7/13;
   position: relative;
   text-align: center;
 }
 
 .goals__image img {
   position: absolute;
-  top: 75px;
+  top: 60px;
   width: 60%;
   margin: 0 auto;
   left: 50%;
@@ -690,6 +690,7 @@ ul, ol, blockquote, label, a {
 .testimonials__scroller--profile-block p {
   font-size: 1.2rem;
   margin-top: .2em;
+  color: var(--col-696969);
 }
 
 .scroller__content {
@@ -711,6 +712,7 @@ ul, ol, blockquote, label, a {
 .scroller__content--text {
   font-size: 1.6rem;
   line-height: 1.4;
+  color: var(--col-696969);
 }
 
 .scroller__content--text:not(:last-child) {
@@ -731,7 +733,7 @@ ul, ol, blockquote, label, a {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 18px;
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
@@ -749,6 +751,7 @@ ul, ol, blockquote, label, a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: var(--col-1E1E1E);
   background-color: var(--white);
 }
 
