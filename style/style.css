@@ -682,24 +682,20 @@ ul, ol, blockquote, label, a {
   border-radius: 50%;
 }
 
-.testimonials__scroller--profile-block {
-  margin-left: 3em;
-}
-
 .testimonials__scroller--profile-block label {
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 
 .testimonials__scroller--profile-block p {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   margin-top: .2em;
 }
 
 .scroller__content {
   background-color: var(--white);
   border-radius: 12px;
-  padding: 3.2em 4.8em;
+  padding: 3.2em;
   width: calc(100% / 3);
 }
 
@@ -707,13 +703,18 @@ ul, ol, blockquote, label, a {
   margin-right: 2.5em;
 }
 
-.scroller__content h5 {
+.scroller__content h6 {
   font-weight: 600;
   margin-bottom: .75em;
 }
 
-.scroller__content h5 + p {
-  font-size: 2.2rem;
+.scroller__content--text {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.scroller__content--text:not(:last-child) {
+  margin-bottom: 1.2em;
 }
 
 .showSlide {

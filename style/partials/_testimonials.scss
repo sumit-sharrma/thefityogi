@@ -35,15 +35,14 @@
             }
 
             &-block{
-                margin-left: 3em;
 
                 label{
-                    font-size: 2.2rem;
+                    font-size: 1.6rem;
                     font-weight: $font-medium;
                 }
 
                 p{
-                    font-size: 1.6rem;
+                    font-size: 1.2rem;
                     margin-top: .2em;
                 }
             }
@@ -55,20 +54,25 @@
     &__content{
         background-color: var(--white);
         border-radius: 12px;
-        padding: 3.2em 4.8em;
+        padding: 3.2em;
         width: calc(100% / 3);
 
         &:not(:last-child){
             margin-right: 2.5em;
         }
 
-        h5{
+        h6{
             font-weight: $font-semi-bold;
             margin-bottom: .75em;
         }
 
-        h5 + p{
-            font-size: 2.2rem;
+        &--text{
+            font-size: 1.6rem;
+            line-height: 1.4;
+
+            &:not(:last-child){
+                margin-bottom: 1.2em;
+            }
         }
     }
 }
