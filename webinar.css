@@ -674,7 +674,7 @@ ul, ol, blockquote, label, a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("/images/dp.png");
+  background-image: url("images/dp.png");
   height: 200px;
   background-position: top;
   background-repeat: no-repeat;
