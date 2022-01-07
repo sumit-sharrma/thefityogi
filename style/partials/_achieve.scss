@@ -52,3 +52,18 @@
         margin-bottom: 3.2em;
     }
 }
+
+@media screen and (max-width: 1366px){
+    .achieve{
+        &__list{
+            li {
+                p{
+                    line-height: 1.6;
+                }
+                &:not(:last-child){
+                    margin-right: 1.4em;
+                }
+            }
+        }
+    }
+}

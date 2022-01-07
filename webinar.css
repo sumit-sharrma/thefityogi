@@ -90,15 +90,28 @@ ul, ol, blockquote, label, a {
 
 .webinar__body {
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 100px 0 0;
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -webkit-box-shadow: 0 4px 24px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 4px 24px rgba(0, 0, 0, 0.16);
+  padding: 12px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--white);
+}
+
+.header__logo {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
 }
 
 .formkit-form {
@@ -706,6 +719,7 @@ ul, ol, blockquote, label, a {
   .webinar__body {
     display: block;
     height: 100vh;
+    margin: 0;
   }
   .formkit-form[data-uid="1dfc04656e"] {
     border-radius: 0;

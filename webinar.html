@@ -17,68 +17,91 @@
     <link rel="stylesheet" href="webinar.css">
 </head>
 
-<body class="webinar__body">  
-    <form action="https://app.convertkit.com/forms/2868664/subscriptions" class="seva-form formkit-form"
-        method="post" data-sv-form="2868664" data-uid="1dfc04656e" data-format="inline" data-version="5"
-        data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Success! Now check your email to confirm your subscription.&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null,&quot;sparkloop&quot;:null,&quot;googletagmanager&quot;:null},&quot;modal&quot;:{&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;powered_by&quot;:{&quot;show&quot;:true,&quot;url&quot;:&quot;https://convertkit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:&quot;bottom_right&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;sticky_bar&quot;:{&quot;display_in&quot;:&quot;top&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15}},&quot;version&quot;:&quot;5&quot;}"
-        min-width="400 500 600 700 800">
-        <div data-style="full">
-            <div data-element="column" class="formkit-background">
-                <div class="profile">
-                    <!-- <img class="profile__img" src="/images/prashant-dp.png" alt=""> -->
-                    <div class="profile__content">
-                        <label for="">Prashant Sharma</label>
-                        <p>Yoga Instructor</p>
-                        <img src="" alt="">
-                    </div>
-                </div>
-            </div>
-            <div data-element="column" class="formkit-column">
-                <div class="formkit-header" data-element="header"
-                    style="color: rgb(83, 83, 83); font-size: 28px; font-weight: 700;">
-                    <h2>Make your body stronger</h2>
+<body>
 
-                    <p>January 8, 2022</p>
-                    <span>8:00 AM IST</span>
-                </div>
-                
-                <!-- <h3>Let's take action</h3> -->
-                <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
-                <div data-element="fields" class="seva-fields formkit-fields">
-                    <div class="formkit-field"><input class="formkit-input" name="email_address"
-                            aria-label="Email Address" placeholder="Email Address" required="" type="email"
-                            style="color: rgb(139, 139, 139); border-color: rgb(221, 224, 228); font-weight: 400;">
+    <header class="header">
+        <div class="header__logo">
+            <a href="/">
+                <svg width="141" height="93" viewBox="0 0 141 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M14.408 71.608L33 71.608L33 75.832L14.408 75.832L14.408 82.168L10.664 82.168L10.664 65.272L14.408 65.272L14.408 71.608ZM23.56 48.2775L23.56 57.5895L33 57.5895L33 61.8135L10.664 61.8135L10.664 57.5895L19.816 57.5895L19.816 48.2775L10.664 48.2775L10.664 44.0535L33 44.0535L33 48.2775L23.56 48.2775ZM33 38.8135L10.664 38.8135L10.664 24.0935L14.408 24.0935L14.408 34.5895L19.816 34.5895L19.816 25.3095L23.56 25.3095L23.56 34.5895L29.256 34.5895L29.256 24.0935L33 24.0935L33 38.8135Z"
+                        fill="#2ECB92" />
+                    <path
+                        d="M46.28 41V13.08H64.24V17.76H51.56V24.52H62.6V29.2H51.56V41H46.28ZM68.2059 41V36.76H71.8859V17.32H68.2059V13.08H80.8859V17.32H77.1659V36.76H80.8859V41H68.2059ZM97.0447 17.76V41H91.7647V17.76H83.8447V13.08H104.965V17.76H97.0447Z"
+                        fill="#292929" />
+                    <path
+                        d="M52.96 82V71.04L43.4 54.08H49.32L55.76 65.88H55.84L62.12 54.08H67.88L58.28 71V82H52.96ZM80.7556 82.48C78.9156 82.48 77.249 82.1733 75.7556 81.56C74.2623 80.9467 72.9823 80.0267 71.9156 78.8C70.8756 77.5733 70.0623 76.0667 69.4756 74.28C68.889 72.4933 68.5956 70.4133 68.5956 68.04C68.5956 65.6933 68.889 63.6267 69.4756 61.84C70.0623 60.0267 70.8756 58.5067 71.9156 57.28C72.9823 56.0533 74.2623 55.1333 75.7556 54.52C77.249 53.9067 78.9156 53.6 80.7556 53.6C82.5956 53.6 84.2623 53.9067 85.7556 54.52C87.249 55.1333 88.529 56.0533 89.5956 57.28C90.6623 58.5067 91.4756 60.0267 92.0356 61.84C92.6223 63.6267 92.9156 65.6933 92.9156 68.04C92.9156 70.4133 92.6223 72.4933 92.0356 74.28C91.4756 76.0667 90.6623 77.5733 89.5956 78.8C88.529 80.0267 87.249 80.9467 85.7556 81.56C84.2623 82.1733 82.5956 82.48 80.7556 82.48ZM80.7556 77.8C82.7556 77.8 84.3423 77.1333 85.5156 75.8C86.7156 74.4667 87.3156 72.6 87.3156 70.2V65.88C87.3156 63.48 86.7156 61.6133 85.5156 60.28C84.3423 58.9467 82.7556 58.28 80.7556 58.28C78.7556 58.28 77.1556 58.9467 75.9556 60.28C74.7823 61.6133 74.1956 63.48 74.1956 65.88V70.2C74.1956 72.6 74.7823 74.4667 75.9556 75.8C77.1556 77.1333 78.7556 77.8 80.7556 77.8ZM116.072 77.68H115.912C115.672 79.04 114.912 80.1867 113.632 81.12C112.379 82.0267 110.699 82.48 108.592 82.48C106.939 82.48 105.406 82.1733 103.992 81.56C102.606 80.9467 101.392 80.04 100.352 78.84C99.3389 77.6133 98.5389 76.1067 97.9522 74.32C97.3655 72.5333 97.0722 70.4667 97.0722 68.12C97.0722 65.7733 97.3655 63.7067 97.9522 61.92C98.5655 60.1067 99.4189 58.5867 100.512 57.36C101.606 56.1333 102.912 55.2 104.432 54.56C105.952 53.92 107.646 53.6 109.512 53.6C112.019 53.6 114.152 54.1467 115.912 55.24C117.672 56.3333 119.059 57.9067 120.072 59.96L115.792 62.48C115.286 61.28 114.526 60.28 113.512 59.48C112.526 58.68 111.192 58.28 109.512 58.28C107.432 58.28 105.766 58.92 104.512 60.2C103.286 61.4533 102.672 63.32 102.672 65.8V70.28C102.672 72.7333 103.299 74.6 104.552 75.88C105.806 77.16 107.486 77.8 109.592 77.8C110.419 77.8 111.192 77.7067 111.912 77.52C112.632 77.3067 113.259 77 113.792 76.6C114.326 76.2 114.752 75.7067 115.072 75.12C115.392 74.5333 115.552 73.84 115.552 73.04V71.24H110.072V66.8H120.632V82H116.072V77.68ZM125.589 82V77.76H129.269V58.32H125.589V54.08H138.269V58.32H134.549V77.76H138.269V82H125.589Z"
+                        fill="#292929" />
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <div class="webinar__body">
+
+        <form action="https://app.convertkit.com/forms/2868664/subscriptions" class="seva-form formkit-form"
+            method="post" data-sv-form="2868664" data-uid="1dfc04656e" data-format="inline" data-version="5"
+            data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Success! Now check your email to confirm your subscription.&quot;,&quot;redirect_url&quot;:&quot;&quot;},&quot;analytics&quot;:{&quot;google&quot;:null,&quot;facebook&quot;:null,&quot;segment&quot;:null,&quot;pinterest&quot;:null,&quot;sparkloop&quot;:null,&quot;googletagmanager&quot;:null},&quot;modal&quot;:{&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;powered_by&quot;:{&quot;show&quot;:true,&quot;url&quot;:&quot;https://convertkit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic&quot;},&quot;recaptcha&quot;:{&quot;enabled&quot;:false},&quot;return_visitor&quot;:{&quot;action&quot;:&quot;show&quot;,&quot;custom_content&quot;:&quot;&quot;},&quot;slide_in&quot;:{&quot;display_in&quot;:&quot;bottom_right&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15},&quot;sticky_bar&quot;:{&quot;display_in&quot;:&quot;top&quot;,&quot;trigger&quot;:&quot;timer&quot;,&quot;scroll_percentage&quot;:null,&quot;timer&quot;:5,&quot;devices&quot;:&quot;all&quot;,&quot;show_once_every&quot;:15}},&quot;version&quot;:&quot;5&quot;}"
+            min-width="400 500 600 700 800">
+            <div data-style="full">
+                <div data-element="column" class="formkit-background">
+                    <div class="profile">
+                        <!-- <img class="profile__img" src="/images/prashant-dp.png" alt=""> -->
+                        <div class="profile__content">
+                            <label for="">Prashant Sharma</label>
+                            <p>Yoga Instructor</p>
+                            <img src="" alt="">
+                        </div>
                     </div>
-                    <div class="formkit-field"><input class="formkit-input" aria-label="First Name"
-                            name="fields[first_name]" required="" placeholder="First Name" type="text"
-                            style="color: rgb(139, 139, 139); border-color: rgb(221, 224, 228); font-weight: 400;">
-                    </div>
-                    <button data-element="submit" class="formkit-submit formkit-submit"
-                        style="">
-                        <div class="formkit-spinner">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div><span class="">Register now</span>
-                    </button>
                 </div>
-                <div class="formkit-disclaimer" data-element="disclaimer"
-                    style="color: rgb(139, 139, 139); font-size: 13px;">We respect your privacy. Unsubscribe at
-                    anytime.</div>
-                
+                <div data-element="column" class="formkit-column">
+                    <div class="formkit-header" data-element="header"
+                        style="color: rgb(83, 83, 83); font-size: 28px; font-weight: 700;">
+                        <h2>Make your body stronger</h2>
+    
+                        <p>January 8, 2022</p>
+                        <span>8:00 AM IST</span>
+                    </div>
+                    
+                    <!-- <h3>Let's take action</h3> -->
+                    <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+                    <div data-element="fields" class="seva-fields formkit-fields">
+                        <div class="formkit-field"><input class="formkit-input" name="email_address"
+                                aria-label="Email Address" placeholder="Email Address" required="" type="email"
+                                style="color: rgb(139, 139, 139); border-color: rgb(221, 224, 228); font-weight: 400;">
+                        </div>
+                        <div class="formkit-field"><input class="formkit-input" aria-label="First Name"
+                                name="fields[first_name]" required="" placeholder="First Name" type="text"
+                                style="color: rgb(139, 139, 139); border-color: rgb(221, 224, 228); font-weight: 400;">
+                        </div>
+                        <button data-element="submit" class="formkit-submit formkit-submit"
+                            style="">
+                            <div class="formkit-spinner">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div><span class="">Register now</span>
+                        </button>
+                    </div>
+                    <div class="formkit-disclaimer" data-element="disclaimer"
+                        style="color: rgb(139, 139, 139); font-size: 13px;">We respect your privacy. Unsubscribe at
+                        anytime.</div>
+                    
+                </div>
             </div>
-        </div>
-        <div class="bottom">
-            <p>Join us and Prashant Sharma, for a <span>Live webinar</span> on Tuesday, Januray 8 at 8:00 am IST to learn:</p>
-            <ul class="bottom__list">
-                <li>How to build a healthy body in 90 days</li>
-                <li>What's your body needs are and which stage your body is in?</li>
-                <li>Follow Smart goals</li>
-                <li>How to remain consistent while achieving your goals</li>
-                <li>How to get motivated</li>
-            </ul>
-        </div>
-    </form>
+            <div class="bottom">
+                <p>Join us and Prashant Sharma, for a <span>Live webinar</span> on Tuesday, Januray 8 at 8:00 am IST to learn:</p>
+                <ul class="bottom__list">
+                    <li>How to build a healthy body in 90 days</li>
+                    <li>What's your body needs are and which stage your body is in?</li>
+                    <li>Follow Smart goals</li>
+                    <li>How to remain consistent while achieving your goals</li>
+                    <li>How to get motivated</li>
+                </ul>
+            </div>
+        </form>
+    </div>
+
 
     <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
 </body>

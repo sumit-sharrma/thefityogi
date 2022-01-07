@@ -82,9 +82,22 @@ ul, ol, blockquote, label, a{
 
 .webinar__body{
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 100px 0 0;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, .16);
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: var(--white);
+
+    &__logo{
+        grid-column: 2/5;
+    }
 }
 
 .formkit-form{
@@ -688,6 +701,7 @@ ul, ol, blockquote, label, a{
     .webinar__body{
         display: block;
         height: 100vh;
+        margin: 0;
     }
 
     .formkit-form[data-uid="1dfc04656e"]{
