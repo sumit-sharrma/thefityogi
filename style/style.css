@@ -1428,6 +1428,7 @@ ul, ol, blockquote, label, a {
   font-size: 2.2rem;
   margin-top: 0;
   margin-bottom: 1.45em;
+  width: calc(100% - 30%);
 }
 
 .contact__content--info span {
@@ -1483,7 +1484,6 @@ ul, ol, blockquote, label, a {
   position: relative;
   bottom: 5.5vw;
   z-index: 0;
-  width: calc(100vw - 40vw);
 }
 
 .footer {
