@@ -549,7 +549,7 @@ ul, ol, blockquote, label, a{
     align-items: center;
     justify-content: center;
     min-height: 200px;
-    background-color: #735bed;
+    background-color: var(--col-2ECB92);
 }
 
 .formkit-form[data-uid="1dfc04656e"] .formkit-column {
@@ -647,17 +647,17 @@ ul, ol, blockquote, label, a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('images/dp.png');
+    background-image: url('images/dp-1.png');
     height: 200px;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    // border: 4px solid var(--white);
+    border: 4px solid #22a374;
     position: relative;
     // top: -40px;
     border-radius: 50%;
     width: 200px;
-    box-shadow: 0 4px 6px rgba(200, 184, 241, .6);
+    // box-shadow: 0 4px 6px rgba(200, 184, 241, .6);
 
     // &__img{
     //     width: 200px;
