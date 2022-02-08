@@ -67,3 +67,18 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px){
+    .achieve{
+        &__list{
+            flex-wrap: wrap;
+
+            li{
+                &:not(:last-child){
+                    margin-bottom: 1.4em;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

@@ -101,3 +101,51 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px){
+    .footer{
+        &__block1{
+            grid-column: 2/7;
+        }
+
+        &__block2{
+            grid-column: 8/12;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .footer{
+        &__block1{
+            grid-column: 2/12;
+        }
+
+        &__block2{
+            grid-column: 2/12;
+            padding-left: 0;
+            text-align: left;
+
+            p{
+                a{
+                    margin-top: 0.5em;
+                }
+            }
+
+            &--list{
+                justify-content: start;
+            }
+        }
+
+        &__about{
+            margin-bottom: 3.2em;
+
+            p:not(:last-child){
+                margin-bottom: 0.5em;
+            }
+        }
+
+        &__quick{
+            margin-bottom: 3.2em;
+        }
+    }
+}
