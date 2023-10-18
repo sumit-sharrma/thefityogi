@@ -1,12 +1,6 @@
 .achieve{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    background-color: var(--col-FBF9F7);
+    grid-column: 2/12;
     padding: 9em 0 12em;
-
-    h3, h4, ul{
-        grid-column: 2/12;
-    }
 
     h4{
         font-weight: $font-medium;
@@ -16,14 +10,15 @@
         list-style: none;
         display: flex;
         padding: 0;
-        margin-top: 8em;
+        margin-top: 5.6em;
         li{
             background-color: var(--white);
             padding: 4em 2.4em;
-            border-radius: 2px;
+            box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.08);
+            border-radius: 12px;
 
             label{
-                font-size: 2.2rem;
+                font-size: 2.4rem;
                 color: var(--col-1e1e1e);
                 font-weight: $font-semi-bold;
             }
@@ -43,8 +38,8 @@
     &__img{
         border: 1px solid var(--col-E7E7E7);
         background-color: var(--col-FBF9F7);
-        width: 70px;
-        height: 70px;
+        width: 72px;
+        height: 72px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -68,14 +63,26 @@
     }
 }
 
+@media screen and (max-width: 1280px){
+    .achieve{
+        padding: 0 0 12em;
+
+        &__list{
+            margin-top: 3.2em;
+        }
+    }
+}
+
 @media screen and (max-width: 1024px){
     .achieve{
+        padding: 10em 0 12em;
+
         &__list{
             flex-wrap: wrap;
 
             li{
                 &:not(:last-child){
-                    margin-bottom: 1.4em;
+                    margin-bottom: 2.4em;
                     margin-right: 0;
                 }
             }

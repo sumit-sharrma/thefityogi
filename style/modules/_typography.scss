@@ -12,8 +12,8 @@ body{
 }
 
 h1{
-    // font-size: clamp(1.2rem, 6vw, 3.2rem);
-    font-size: 12.8rem;
+    font-size: clamp(1.6rem, 14vw, 7.2rem);
+    // font-size: 7.2rem;
     color: var(--col-1E1E1E);
 }
 
@@ -51,8 +51,12 @@ ul, ol, blockquote, label, a{
     font-family: $sans-serif;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 980px){
     h3{
-        font-size: 2rem;
+        font-size: 4.4rem;
+    }
+    
+    h4{
+        font-size: 3.2rem;
     }
 }

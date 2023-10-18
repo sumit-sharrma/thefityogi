@@ -1,6 +1,5 @@
 .testimonials{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-column: 2/12;
     padding: 9em 0 12em;
     background-color: var(--col-FBF9F7);
 
@@ -14,7 +13,7 @@
 
     &__scroller{
         grid-column: 2/12;
-        margin-top: 8em;
+        margin-top: 5.6em;
         position: relative;
 
         ul{
@@ -136,4 +135,38 @@
     to {  
         opacity: 1  
     }  
-}  
+}
+
+@media screen and (max-width: 1280px){
+    .testimonials{
+        padding: 0 0 12em;
+
+        &__scroller{
+            margin-top: 3.2em;
+
+            ul{
+                flex-direction: column;
+            }
+        }
+    }
+
+    .scroller{
+        &__content{
+            width: 100%;
+            &:not(:last-child){
+                margin-right: 0;
+                margin-bottom: 2.5em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 520px){
+    .slidercontainer{
+        width: calc(100% - 4em);
+    }
+    .left, .right{
+        color: var(--white);
+        background-color: var(--col-2C3934);
+    }
+}
