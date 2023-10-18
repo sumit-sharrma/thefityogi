@@ -678,7 +678,7 @@ ul, ol, blockquote, label, a {
   }
 }
 .hero {
-  background-image: url(/images/hero-image.png);
+  background-image: url(images/hero-image.png);
   grid-column: 1/13;
   background-repeat: no-repeat;
   top: -120px;
