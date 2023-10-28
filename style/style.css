@@ -678,7 +678,7 @@ ul, ol, blockquote, label, a {
   }
 }
 .hero {
-  background-image: url(images/hero-image.png);
+  background-image: url(https://res.cloudinary.com/dcx5qfzvy/image/upload/v1698510423/hero-image_eqg47m.webp);
   grid-column: 1/13;
   background-repeat: no-repeat;
   top: -120px;
